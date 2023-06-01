@@ -27,7 +27,7 @@
 
 
 
-//Solution determining the animal noun with an 'if'
+//Solution determining the animal noun with an'if'
 
 //There are 4 attributes to the class wich are: name(_nombre), age (_edad), noun (_sustantivo) & type (_tipo). 
 class Animal {
@@ -55,8 +55,13 @@ class Animal {
         return `Me gusta saltar cuando mi dueño me llama por mi nombre (${this._nombre})`
     }
     
-    
-  }
+    get nombre() {
+        return this._nombre;
+    }
+    set nombre(nuevoNombre){
+      this._nombre = nuevoNombre;
+    }
+      }
   //variables for the result
   let gato = new Animal("Sukuna", 3, "Gato", "gato");
   let perro = new Animal("Hannie", 7, "Perro", "perro");
@@ -76,5 +81,14 @@ class Animal {
   console.log(perro.saltar());
   console.log(tortuga.saltar());
 
+ 
+
+
+console.log(gato.nombre);
+
+
+
+perro._nombre = 'Migue';
+console.log(perro._nombre);
   
  
