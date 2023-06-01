@@ -1,4 +1,4 @@
-/*First solution without determining the noun of the animal with an 'if*/
+// * *First solution without determining the noun of the animal with an 'if*/
 
 // class Animal {
 //     constructor(nombre, edad, sustantivo, tipo) {
@@ -22,7 +22,7 @@
 
 // console.log(gato);
 
-// console.log(gato.saludar());
+// console.log(gato.saludar()); */
 
 
 
@@ -46,7 +46,7 @@ class Animal {
         return `Hola, soy ${this._nombre}, tengo ${this._edad} años y soy ${this._sustantivo} ${this._tipo} mas bonito do mundo`;
     }
     comer() {
-        return `Soy ${this.nombre} y estoy comiendo`
+        return `Soy ${this._nombre} y estoy comiendo`
     }
     saltar() {
         return `Me gusta saltar cuando mi dueño me llama por mi nombre (${this._nombre}) l`
