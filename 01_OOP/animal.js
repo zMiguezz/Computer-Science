@@ -29,19 +29,22 @@
 
 //Solution determining the animal noun with an 'if'
 
+//There are 4 attributes to the class wich are: name(_nombre), age (_edad), noun (_sustantivo) & type (_tipo). 
 class Animal {
     constructor(nombre, edad, sustantivo, tipo) {
       this._nombre = nombre;
       this._edad = edad;
-    this._tipo = tipo;
+      this._tipo = tipo;
+      this._sustantivo = sustantivo;
+     
+    //'if' to determinine the noun of the animal
       if (tipo.toLowerCase() === "gato" || tipo.toLowerCase() === "perro") {
         this._sustantivo = "el";
       } else {
         this._sustantivo = "la";
       }
-  //There are 4 attributes to the class wich are: name(_nombre), age (_edad), noun (_sustantivo) & type (_tipo).    
     }
-   
+   //And there are 3 metods for the class wich are: comer(), saltar(), saludar().
     saludar() {
         return `Hola, soy ${this._nombre}, tengo ${this._edad} años y soy ${this._sustantivo} ${this._tipo} mas bonito do mundo`;
     }
@@ -49,16 +52,16 @@ class Animal {
         return `Soy ${this._nombre} y estoy comiendo`
     }
     saltar() {
-        return `Me gusta saltar cuando mi dueño me llama por mi nombre (${this._nombre}) l`
+        return `Me gusta saltar cuando mi dueño me llama por mi nombre (${this._nombre})`
     }
     
-    //And there are 3 metods for the class wich are: comer(), saltar(), saludar().
+    
   }
-  
+  //variables for the result
   let gato = new Animal("Sukuna", 3, "Gato", "gato");
   let perro = new Animal("Hannie", 7, "Perro", "perro");
   let tortuga = new Animal("Willyrex", 32, "Tortuga", "tortuga");
-  
+  //clg
   console.log(gato.saludar());
   console.log(perro.saludar());
   console.log(tortuga.saludar());
