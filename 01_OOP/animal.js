@@ -1,4 +1,4 @@
-/*Primera solucion sin el if para determinar*/
+/*First solution without determining the noun of the animal with an 'if*/
 
 // class Animal {
 //     constructor(nombre, edad, sustantivo, tipo) {
@@ -9,23 +9,25 @@
         
 //     }
 //     comer(){}
-//     jugar(){}
+//     saltar(){}
 //     saludar(){
 //         return `Hola soy ${this._nombre} tengo ${this._edad} años y soy un/una ${this._sustantivo} ${this._tipo}`;
 //     } 
 
 //     if ()
 // }
-// let gatoVar = new Animal ("Sukuna", 3, "Gato")
-// let perroVar = new Animal ("Hannie", 7, "Perro")
-// let tortugaVar = new Animal ("Willyrex", 32, "Tortuga")
+// let gato = new Animal ("Sukuna", 3, "Gato")
+// let perro = new Animal ("Hannie", 7, "Perro")
+// let tortuga = new Animal ("Willyrex", 32, "Tortuga")
 
-// console.log(gatoVar);
+// console.log(gato);
 
-// console.log(gatoVar.saludar());
+// console.log(gato.saludar());
 
 
 
+
+//Solution determining the animal noun with an 'if'
 
 class Animal {
     constructor(nombre, edad, sustantivo, tipo) {
@@ -37,31 +39,39 @@ class Animal {
       } else {
         this._sustantivo = "la";
       }
-  //There are 4 attributes to the class wich are: name(_nombre), age (_edad), noun (_sustantivo) & type (_tipo).
-      
+  //There are 4 attributes to the class wich are: name(_nombre), age (_edad), noun (_sustantivo) & type (_tipo).    
     }
-  
-    comer() {}
-    jugar() {
-        return `Me gusta jugar con la pelota`
-    }
+   
     saludar() {
-      return `Hola, soy ${this._nombre}, tengo ${this._edad} años y soy ${this._sustantivo} ${this._tipo} mas bonito do mundo`;
+        return `Hola, soy ${this._nombre}, tengo ${this._edad} años y soy ${this._sustantivo} ${this._tipo} mas bonito do mundo`;
     }
-    //And there are 3 metods for the class wich are: comer(), jugar(), saludar().
+    comer() {
+        return `Soy ${this.nombre} y estoy comiendo`
+    }
+    saltar() {
+        return `Me gusta saltar cuando mi dueño me llama por mi nombre (${this._nombre}) l`
+    }
+    
+    //And there are 3 metods for the class wich are: comer(), saltar(), saludar().
   }
   
-  let gatoVar = new Animal("Sukuna", 3, "Gato", "gato");
-  let perroVar = new Animal("Hannie", 7, "Perro", "perro");
-  let tortugaVar = new Animal("Willyrex", 32, "Tortuga", "tortuga");
+  let gato = new Animal("Sukuna", 3, "Gato", "gato");
+  let perro = new Animal("Hannie", 7, "Perro", "perro");
+  let tortuga = new Animal("Willyrex", 32, "Tortuga", "tortuga");
   
-  console.log(gatoVar.saludar());
-  console.log(perroVar.saludar());
-  console.log(tortugaVar.saludar());
+  console.log(gato.saludar());
+  console.log(perro.saludar());
+  console.log(tortuga.saludar());
 
 
-  console.log(gatoVar.jugar());
-  console.log(perroVar.jugar());
-  console.log(tortugaVar.jugar());
+  console.log(gato.comer())
+  console.log(perro.comer())
+  console.log(tortuga.comer())
+
+
+  console.log(gato.saltar());
+  console.log(perro.saltar());
+  console.log(tortuga.saltar());
+
   
  
