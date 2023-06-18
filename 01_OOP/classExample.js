@@ -14,4 +14,7 @@ class Alumno {
 }
 let migue = new Alumno("Miguel", "Hernandez", 10, true, [10, 9, 8, 10, 9]);
 
-console.log(migue);
+console.log(migue); 
+
+getNombre()
+

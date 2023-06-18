@@ -86,9 +86,7 @@ class Animal {
 
 console.log(gato.nombre);
 
-
-
-perro._nombre = 'Migue';
+perro.nombre = 'Migue';
 console.log(perro._nombre);
   
  
