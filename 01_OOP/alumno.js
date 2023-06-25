@@ -23,6 +23,7 @@ class Alumno {
         }
     }
 }
+// clg
 
 let alumno1 = new Alumno("Luis Fernando", "Luna Martinez", 7);
 let alumno2 = new Alumno("Maria Luisa", "Perez Ramirez", 5);
